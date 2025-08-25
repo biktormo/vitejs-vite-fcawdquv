@@ -34,13 +34,13 @@ const HomePage = () => {
                         <HomeCard 
                             to="/audits/panel" 
                             icon="📋"
-                            title="Panel de Auditorías" 
+                            title="Panel de Auditorías PS" 
                             description="Ver, continuar o cerrar auditorías." 
                         />
                         <HomeCard 
                             to="/audit/new"
                             icon="✏️"
-                            title="Nueva Auditoría"
+                            title="Nueva Auditoría PS"
                             description="Iniciar una auditoría desde cero."
                         />
                     </>
