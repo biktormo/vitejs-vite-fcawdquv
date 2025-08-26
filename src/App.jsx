@@ -16,6 +16,8 @@ import DashboardPage from './pages/DashboardPage.jsx';
 import PlanesDeAccionPage from './pages/PlanesDeAccionPage.jsx';
 import PlanDeAccionDetailPage from './pages/PlanDeAccionDetailPage.jsx';
 import Auditoria5SPage from './pages/Auditoria5SPage.jsx';
+import InformeGraficoPage from './pages/InformeGraficoPage.jsx';
+import InformeInteractivoPage from './pages/InformeInteractivoPage.jsx';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/plan-de-accion/:tipo/:resultadoId" element={<ProtectedRoute allowedRoles={['administrador', 'auditor', 'colaborador']}><PlanDeAccionDetailPage /></ProtectedRoute>} />
         <Route path="*" element={<div style={{ padding: '2rem' }}><Link to="/">Página no encontrada. Volver al inicio.</Link></div>} />
         <Route path="/auditoria-5s" element={<ProtectedRoute><Auditoria5SPage /></ProtectedRoute>} />
+        <Route path="/informe-grafico-5s/:auditId" element={<ProtectedRoute><InformeGraficoPage /></ProtectedRoute>} />
+        <Route path="/informe-interactivo/ps/:auditId" element={<ProtectedRoute><InformeInteractivoPage /></ProtectedRoute>} />
       </Routes>
     </>
   );
