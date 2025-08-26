@@ -26,7 +26,7 @@ function App() {
         {/* Rutas Públicas */}
         <Route path="/login" element={<LoginPage />} />
 
-        {/* Rutas Protegidas */}
+        {/* Rutas Protegidas Varias */}
         <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
         <Route path="/audit/new" element={<ProtectedRoute allowedRoles={['administrador', 'auditor']}><NewAuditPage /></ProtectedRoute>} />
         <Route path="/audit/:auditId" element={<ProtectedRoute allowedRoles={['administrador', 'auditor']}><AuditPage /></ProtectedRoute>} />
